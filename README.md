@@ -1,8 +1,17 @@
-# IslamNET — Premium Spiritual WordPress Theme
+# IslamNET - Islamic Social Network & Education Platform
 
-![IslamNET Logo](assets/images/logo.png)
+**Version:** 2.0.0  
+**Author:** QALAM  
+**License:** GNU General Public License v2 or later  
+**Repository:** https://github.com/QalamHipHop/ISLAMNET
 
-IslamNET is a high-end, professional WordPress theme specifically designed for the global Muslim community. It combines a minimalist **iOS-inspired UI/UX** with powerful social, educational, and spiritual features.
+## Overview
+
+IslamNET is a comprehensive, professional WordPress theme designed specifically for the global Muslim community (Jamealslam / IslamRepublic). It provides a unified platform for social networking, educational content delivery, and community engagement. The theme seamlessly integrates BuddyPress for social features, LearnPress for educational content, and Elementor for flexible page building, all while maintaining strong support for RTL languages like Arabic and Persian.
+
+In version 2.0.0, we have introduced a premium **iOS-inspired UI/UX** overhaul, providing a minimalist, serene, and modern digital space for Muslims to connect, learn, and grow spiritually.
+
+---
 
 ## ✨ Vision
 To provide a serene, elegant, and modern digital space for Muslims to connect, learn, and grow spiritually.
@@ -11,21 +20,24 @@ To provide a serene, elegant, and modern digital space for Muslims to connect, l
 
 ## 🚀 Key Features
 
-### 🎨 Premium UI/UX
+### 🎨 Premium UI/UX (New in v2.0)
 - **iOS Human Interface Guidelines:** A clean, intuitive, and familiar interface.
 - **Minimalist Palette:** Sophisticated use of White (#FFFFFF), Black (#000000), and Soft Grays.
 - **Spiritual Elegance:** Typography and spacing designed for a peaceful reading and browsing experience.
 - **100% Responsive:** Mobile-first design with an iOS-like bottom navigation bar.
 - **Dark Mode:** Seamless transition between light and dark themes.
 
-### 👥 Social & Community
-- **BuddyPress Integration:** Advanced profiles, activity feeds, and groups.
+### 👥 Social Networking
+- **BuddyPress Integration:** Build vibrant communities with member profiles, activity streams, and direct messaging.
+- **Community Groups:** Create and manage topic-specific groups for discussions and collaboration.
+- **Member Directory:** Comprehensive member profiles with customizable information fields.
 - **Verified Badges:** Special badges for scholars and verified members.
-- **Spiritual Dashboards:** User profiles focused on spiritual growth and achievements.
 
-### 📚 Learning Management
-- **LearnPress Ready:** Professional course layouts for Islamic studies.
-- **Quizzes & Assignments:** Interactive learning tools.
+### 📚 Educational Platform
+- **LearnPress LMS:** Full-featured learning management system for creating and delivering courses.
+- **Course Management:** Organize courses with lessons, quizzes, and assignments.
+- **Student Progress Tracking:** Monitor student advancement and completion rates.
+- **Certificate System:** Award certificates upon course completion.
 
 ### 🕋 Spiritual Tools (New in v2.0)
 - **Prayer Times:** Smart geolocation-based prayer time widget.
@@ -33,34 +45,45 @@ To provide a serene, elegant, and modern digital space for Muslims to connect, l
 - **Hijri Calendar:** Elegant Islamic calendar integration.
 - **Spiritual Streak:** Daily reminders and progress tracking for prayers and Quran reading.
 
----
-
-## 🛠 Technical Specifications
-- **WordPress 6.0+** Compatible
-- **PHP 8.2+** Optimized
-- **Elementor** Drag & Drop Builder
-- **WooCommerce** Ready for Halal Marketplace
-- **Clean Code:** OOP structure, PSR-12 standards, and secure coding practices.
-- **Performance:** Core Web Vitals optimized (High scores in LCP, FID, CLS).
+### 🛠 Technical Features
+- **RTL Support:** Full right-to-left language support for Arabic, Persian, and other RTL languages.
+- **Performance Optimized:** Core Web Vitals optimized (High scores in LCP, FID, CLS).
+- **SEO Ready:** Yoast SEO integration for search engine optimization.
 - **Accessibility:** WCAG 2.2 AA+ compliant.
+- **Auto-Installer:** Merlin WP setup wizard with automatic plugin installation and demo content import.
 
 ---
 
 ## 📦 Installation
 
-### Method 1: Merlin Setup Wizard (Recommended)
-1. Upload the `islamnet` theme folder to `/wp-content/themes/`.
-2. Activate the theme in **Appearance > Themes**.
-3. Follow the **IslamNET Setup Wizard** to install required plugins and import demo content.
+### Method 1: Automatic Setup Wizard (Recommended)
+
+1. **Upload the Theme:**
+   - Download the IslamNET theme.
+   - Go to WordPress Admin → Appearance → Themes.
+   - Click "Add New" and upload the theme ZIP file.
+   - Click "Activate".
+
+2. **Run Setup Wizard:**
+   - After activation, the Merlin WP setup wizard will automatically launch.
+   - Follow the on-screen instructions for plugin installation and demo content import.
 
 ### Method 2: Manual Installation
-1. Install and activate required plugins: **BuddyPress**, **Elementor**, **Advanced Custom Fields**.
-2. Install recommended plugins: **LearnPress**, **GamiPress**, **WooCommerce**.
-3. Go to **Appearance > Customize** to configure your settings.
+
+1. **Upload the Theme:**
+   - Extract the theme folder and upload via FTP to `/wp-content/themes/`.
+   - Go to WordPress Admin → Appearance → Themes and click "Activate".
+
+2. **Install Required Plugins:**
+   - Install and activate: **BuddyPress**, **Elementor**, **Advanced Custom Fields**.
+
+3. **Install Recommended Plugins:**
+   - **LearnPress**, **GamiPress**, **rtMedia**, **WooCommerce**, **Contact Form 7**, **Yoast SEO**, **WP Super Cache**.
 
 ---
 
-## 📂 Project Structure
+## 📂 File Structure
+
 ```text
 islamnet/
 ├── assets/             # CSS, JS, and Images
@@ -82,6 +105,11 @@ islamnet/
 - **NEW:** Integrated Quran Player and Prayer Times module.
 - **IMPROVED:** Performance optimization for Core Web Vitals.
 - **IMPROVED:** Full RTL support for Arabic and Persian languages.
+
+### v1.2.0
+- Added Merlin WP setup wizard for streamlined installation.
+- Enhanced plugin management with TGM Plugin Activation.
+- Improved documentation and setup instructions.
 
 ---
 

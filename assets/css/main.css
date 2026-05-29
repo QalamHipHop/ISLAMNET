@@ -273,3 +273,21 @@ input:focus, textarea:focus {
         border-top-color: var(--islamnet-gray-200);
     }
 }
+
+/* Logo Fallback Styles */
+.logo-fallback {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--islamnet-black);
+    text-transform: uppercase;
+}
+
+.site-title, .site-description {
+    display: none; /* Hidden when logo or fallback text is present for cleaner UI */
+}
