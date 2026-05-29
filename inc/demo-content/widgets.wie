@@ -1,0 +1,14 @@
+<?php
+/**
+ * IslamNET Demo Content - Widgets Configuration
+ * 
+ * This file contains placeholder widget configuration for demo content.
+ * Widget settings will be imported during theme setup.
+ */
+
+// Placeholder for widget configuration
+$widgets_config = array(
+	// Widget areas will be configured here
+);
+
+return $widgets_config;

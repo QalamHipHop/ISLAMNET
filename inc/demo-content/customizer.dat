@@ -1,0 +1,14 @@
+<?php
+/**
+ * IslamNET Demo Content - Customizer Settings
+ * 
+ * This file contains placeholder customizer settings for demo content.
+ * Customizer options will be imported during theme setup.
+ */
+
+// Placeholder for customizer settings
+$customizer_settings = array(
+	// Customizer options will be configured here
+);
+
+return $customizer_settings;
