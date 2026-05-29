@@ -271,7 +271,15 @@ function islamnet_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'islamnet_scripts' );
+	add_action( 'wp_enqueue_scripts', 'islamnet_scripts' );
+	
+	/**
+	 * Enqueue Dashicons for frontend (used in mobile navigation).
+	 */
+	function islamnet_enqueue_dashicons() {
+		wp_enqueue_style( 'dashicons' );
+	}
+	add_action( 'wp_enqueue_scripts', 'islamnet_enqueue_dashicons' );
 
 /**
  * Enqueue admin scripts and styles.

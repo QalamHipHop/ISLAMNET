@@ -1,18 +1,24 @@
 /*
 Theme Name: IslamNET
 Theme URI: https://github.com/QalamHipHop/ISLAMNET
-Description: A professional, comprehensive social networking and educational WordPress theme for the global Muslim community. Inspired by SocialV, it integrates BuddyPress, LearnPress, and Elementor.
+Description: IslamNET is a premium, high-end WordPress theme designed for the global Muslim community. It features a minimalist, iOS-inspired UI/UX with a focus on spirituality, peace, and elegance. Built with modern standards for 2026, it integrates BuddyPress, LearnPress, and Elementor.
 Author: QALAM
 Author URI: https://github.com/QalamHipHop
-Version: 1.1.0
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: islamnet
-Tags: social-networking, buddy-press, rtl-support, education, lms, community, elementor, woocommerce
+Tags: social-networking, buddy-press, rtl-support, education, lms, community, elementor, woocommerce, minimalist, ios-design, spiritual
 */
 
 /* 
-This theme is built and maintained by QALAM.
-It provides a unified platform for Jamealslam (IslamRepublic), 
-integrating social interaction, learning management, and media sharing.
-*/
+ * IslamNET - Premium Spiritual Experience
+ * 
+ * This theme follows the iOS Human Interface Guidelines for a clean, 
+ * intuitive, and peaceful user experience.
+ * 
+ * Colors: Pure White (#FFFFFF), Deep Black (#000000), and Soft Grays.
+ */
+
+/* Main styles are located in assets/css/main.css */
+@import url("assets/css/main.css");
