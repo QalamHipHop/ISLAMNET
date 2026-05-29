@@ -26,6 +26,8 @@ require_once ISLAMNET_THEME_DIR . '/inc/tgmpa/class-tgm-plugin-activation.php';
  * Include Helper Functions
  */
 require_once ISLAMNET_THEME_DIR . '/inc/helpers/helper-functions.php';
+require_once ISLAMNET_THEME_DIR . '/inc/helpers/buddypress-integration.php';
+require_once ISLAMNET_THEME_DIR . '/inc/widgets/custom-widgets.php';
 
 /**
  * Register Required Plugins
@@ -70,6 +72,24 @@ function islamnet_setup() {
 	) );
 }
 add_action( 'after_setup_theme', 'islamnet_setup' );
+
+/**
+ * Register widget area.
+ */
+function islamnet_widgets_init() {
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'islamnet' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'islamnet' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+}
+add_action( 'widgets_init', 'islamnet_widgets_init' );
 
 /**
  * Enqueue scripts and styles.

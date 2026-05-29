@@ -39,3 +39,27 @@
     border-radius: 10px;
     font-size: 11px;
 }
+
+.site-content-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.content-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.widget-area {
+    flex: 0 0 300px;
+}
+
+.widget {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
