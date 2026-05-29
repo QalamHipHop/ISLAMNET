@@ -9,13 +9,219 @@
 	xmlns:wp="http://wordpress.org/export/1.2/">
 <channel>
 	<title>IslamNET Demo Content</title>
-	<link>https://example.com</link>
-	<description>Demo content for IslamNET theme</description>
-	<lastBuildDate>2024-01-01T00:00:00Z</lastBuildDate>
-	<language>en-us</language>
+	<link>https://islamnet.local</link>
+	<description>Demo content for IslamNET Islamic Community Platform</description>
+	<language>en</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>https://example.com</wp:base_site_url>
-	<wp:base_blog_url>https://example.com</wp:base_blog_url>
-	<!-- Demo posts and pages will be added here -->
+	<wp:base_site_url>https://islamnet.local</wp:base_site_url>
+	<wp:base_blog_url>https://islamnet.local</wp:base_blog_url>
+	
+	<!-- Sample Page: Home -->
+	<item>
+		<title>Welcome to IslamNET</title>
+		<link>https://islamnet.local/</link>
+		<wp:post_id>1</wp:post_id>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home</wp:post_name>
+		<content:encoded><![CDATA[
+<h1>Welcome to IslamNET</h1>
+<p>IslamNET is a comprehensive cultural-social platform designed to unite Muslims worldwide. Our mission is to facilitate communication, cultural exchange, and strengthen Islamic identity in the digital space.</p>
+<h2>Our Mission</h2>
+<p>To create a safe, inclusive, and enriching community where Muslims can connect, learn, and grow together.</p>
+<h2>Key Features</h2>
+<ul>
+<li>Social Networking with Islamic Values</li>
+<li>Online Islamic Courses and Learning</li>
+<li>Community Events and Gatherings</li>
+<li>Digital Islamic Library</li>
+<li>Prayer Times and Islamic Calendar</li>
+<li>Charitable Campaigns and Community Support</li>
+</ul>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Page: About Us -->
+	<item>
+		<title>About IslamNET</title>
+		<link>https://islamnet.local/about</link>
+		<wp:post_id>2</wp:post_id>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about</wp:post_name>
+		<content:encoded><![CDATA[
+<h1>About IslamNET</h1>
+<p>IslamNET (also known as Islamic Community / IslamRepublic) is an innovative platform that brings together Muslims from around the world.</p>
+<h2>Our Vision</h2>
+<p>To establish a global Islamic community that promotes knowledge, culture, and mutual support among Muslims worldwide.</p>
+<h2>Our Values</h2>
+<ul>
+<li><strong>Unity:</strong> Bringing Muslims together regardless of nationality or school of thought</li>
+<li><strong>Knowledge:</strong> Promoting Islamic education and learning</li>
+<li><strong>Respect:</strong> Fostering respectful dialogue and understanding</li>
+<li><strong>Service:</strong> Supporting community needs and charitable causes</li>
+<li><strong>Innovation:</strong> Using modern technology for Islamic purposes</li>
+</ul>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Page: Community Guidelines -->
+	<item>
+		<title>Community Guidelines</title>
+		<link>https://islamnet.local/community-guidelines</link>
+		<wp:post_id>3</wp:post_id>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>community-guidelines</wp:post_name>
+		<content:encoded><![CDATA[
+<h1>Community Guidelines</h1>
+<p>IslamNET is committed to maintaining a respectful and safe community. Please follow these guidelines:</p>
+<h2>Respect and Tolerance</h2>
+<ul>
+<li>Treat all members with respect and dignity</li>
+<li>Respect different schools of Islamic thought</li>
+<li>Avoid personal attacks and harassment</li>
+<li>Promote constructive dialogue</li>
+</ul>
+<h2>Content Standards</h2>
+<ul>
+<li>Share content that is accurate and beneficial</li>
+<li>Avoid spreading misinformation</li>
+<li>Respect intellectual property rights</li>
+<li>Do not share inappropriate or offensive content</li>
+</ul>
+<h2>Moderation</h2>
+<p>Our moderation team works to ensure the community remains safe and welcoming. Violations of these guidelines may result in warnings, content removal, or account suspension.</p>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Course Post Type (if LearnPress is active) -->
+	<item>
+		<title>Introduction to Islamic Studies</title>
+		<link>https://islamnet.local/courses/intro-islamic-studies</link>
+		<wp:post_id>10</wp:post_id>
+		<wp:post_type>lp_course</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>intro-islamic-studies</wp:post_name>
+		<content:encoded><![CDATA[
+<h1>Introduction to Islamic Studies</h1>
+<p>This comprehensive course introduces students to the fundamentals of Islamic studies, covering the Quran, Hadith, Islamic history, and jurisprudence.</p>
+<h2>Course Outline</h2>
+<ul>
+<li>Module 1: Foundations of Islam</li>
+<li>Module 2: The Quran and Its Sciences</li>
+<li>Module 3: Hadith and Sunnah</li>
+<li>Module 4: Islamic History</li>
+<li>Module 5: Islamic Jurisprudence (Fiqh)</li>
+</ul>
+<h2>Course Details</h2>
+<p><strong>Duration:</strong> 8 weeks</p>
+<p><strong>Level:</strong> Beginner</p>
+<p><strong>Language:</strong> English</p>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Blog Post -->
+	<item>
+		<title>The Importance of Community in Islam</title>
+		<link>https://islamnet.local/blog/importance-of-community</link>
+		<wp:post_id>20</wp:post_id>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>importance-of-community</wp:post_name>
+		<dc:creator>Admin</dc:creator>
+		<content:encoded><![CDATA[
+<h1>The Importance of Community in Islam</h1>
+<p>In Islamic tradition, the concept of community (Ummah) holds profound significance. The Quran and Hadith emphasize the importance of unity, cooperation, and mutual support among believers.</p>
+<h2>Quranic Perspective</h2>
+<p>The Quran repeatedly emphasizes the concept of community and collective responsibility. Muslims are encouraged to support one another and work together for the common good.</p>
+<h2>Prophetic Tradition</h2>
+<p>The Prophet Muhammad (peace be upon him) established a strong community in Medina, setting an example for how Muslims should interact and support each other.</p>
+<h2>Modern Challenges</h2>
+<p>In today's globalized world, maintaining strong Islamic communities is more important than ever. Platforms like IslamNET help bridge geographical distances and strengthen bonds among Muslims worldwide.</p>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Blog Post: Prayer Times -->
+	<item>
+		<title>Understanding Prayer Times in Islam</title>
+		<link>https://islamnet.local/blog/prayer-times</link>
+		<wp:post_id>21</wp:post_id>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>prayer-times</wp:post_name>
+		<dc:creator>Admin</dc:creator>
+		<content:encoded><![CDATA[
+<h1>Understanding Prayer Times in Islam</h1>
+<p>Prayer (Salah) is one of the five pillars of Islam and is performed at specific times throughout the day. Each prayer time has its own significance and spiritual meaning.</p>
+<h2>The Five Daily Prayers</h2>
+<ul>
+<li><strong>Fajr:</strong> Pre-dawn prayer, performed before sunrise</li>
+<li><strong>Dhuhr:</strong> Midday prayer, performed after the sun passes its zenith</li>
+<li><strong>Asr:</strong> Afternoon prayer, performed in the late afternoon</li>
+<li><strong>Maghrib:</strong> Evening prayer, performed after sunset</li>
+<li><strong>Isha:</strong> Night prayer, performed after dark</li>
+</ul>
+<h2>Determining Prayer Times</h2>
+<p>Prayer times vary based on geographical location and the position of the sun. IslamNET provides accurate prayer times for your location using astronomical calculations.</p>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Event (if Events Calendar is used) -->
+	<item>
+		<title>Monthly Community Gathering</title>
+		<link>https://islamnet.local/events/monthly-gathering</link>
+		<wp:post_id>30</wp:post_id>
+		<wp:post_type>tribe_events</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>monthly-gathering</wp:post_name>
+		<content:encoded><![CDATA[
+<h1>Monthly Community Gathering</h1>
+<p>Join us for our monthly community gathering where members can connect, share experiences, and discuss important topics affecting our community.</p>
+<h2>Event Details</h2>
+<p><strong>Date:</strong> First Friday of each month</p>
+<p><strong>Time:</strong> 7:00 PM - 9:00 PM (Local Time)</p>
+<p><strong>Location:</strong> Virtual Meeting Room</p>
+<h2>Topics</h2>
+<ul>
+<li>Community Updates</li>
+<li>Islamic Knowledge Sharing</li>
+<li>Member Networking</li>
+<li>Q&amp;A Session</li>
+</ul>
+		]]></content:encoded>
+	</item>
+
+	<!-- Sample Charity Campaign -->
+	<item>
+		<title>Education Fund Campaign</title>
+		<link>https://islamnet.local/campaigns/education-fund</link>
+		<wp:post_id>40</wp:post_id>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:status>publish</wp:status>
+		<wp:post_name>education-fund</wp:post_name>
+		<dc:creator>Admin</dc:creator>
+		<content:encoded><![CDATA[
+<h1>Education Fund Campaign</h1>
+<p>IslamNET is launching a campaign to support Islamic education initiatives worldwide. Your contributions will help provide quality Islamic education to students in underserved communities.</p>
+<h2>Campaign Goals</h2>
+<ul>
+<li>Provide scholarships for Islamic students</li>
+<li>Support Islamic schools and institutions</li>
+<li>Develop educational resources</li>
+<li>Train Islamic educators</li>
+</ul>
+<h2>How You Can Help</h2>
+<p>Every contribution, no matter the amount, makes a difference. Your support helps us fulfill our mission of spreading Islamic knowledge and strengthening our community.</p>
+		]]></content:encoded>
+	</item>
 </channel>
 </rss>

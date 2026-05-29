@@ -1,14 +1,114 @@
 <?php
 /**
- * IslamNET Demo Content - Widgets Configuration
+ * IslamNET Demo Content - Widget Settings
  * 
- * This file contains placeholder widget configuration for demo content.
- * Widget settings will be imported during theme setup.
+ * This file contains widget configuration for demo content.
+ * Widgets will be imported during theme setup.
  */
 
-// Placeholder for widget configuration
-$widgets_config = array(
-	// Widget areas will be configured here
+// Widget settings for IslamNET theme
+$widget_settings = array(
+	'sidebar-1' => array(
+		array(
+			'id' => 'search',
+			'title' => '',
+			'settings' => array(),
+		),
+		array(
+			'id' => 'recent-posts',
+			'title' => 'Recent Posts',
+			'settings' => array(
+				'number' => 5,
+				'show_date' => true,
+			),
+		),
+		array(
+			'id' => 'categories',
+			'title' => 'Categories',
+			'settings' => array(
+				'count' => true,
+				'hierarchical' => true,
+			),
+		),
+	),
+	'footer-1' => array(
+		array(
+			'id' => 'text',
+			'title' => 'About IslamNET',
+			'settings' => array(
+				'text' => 'IslamNET is a global Islamic community platform dedicated to fostering connection, learning, and spiritual growth among Muslims worldwide.',
+				'filter' => true,
+			),
+		),
+		array(
+			'id' => 'nav_menu',
+			'title' => 'Quick Links',
+			'settings' => array(
+				'nav_menu' => 0,
+			),
+		),
+		array(
+			'id' => 'text',
+			'title' => 'Contact Information',
+			'settings' => array(
+				'text' => '<p><strong>Email:</strong> info@islamnet.local</p><p><strong>Phone:</strong> +1 (555) 123-4567</p>',
+				'filter' => true,
+			),
+		),
+	),
 );
 
-return $widgets_config;
+// Custom widgets for IslamNET
+$custom_widgets = array(
+	'islamnet_prayer_times' => array(
+		'title' => 'Prayer Times Widget',
+		'description' => 'Display prayer times for a specific location',
+		'settings' => array(
+			'city' => 'Tehran',
+			'country' => 'Iran',
+			'method' => '2',
+			'show_hijri' => true,
+		),
+	),
+	'islamnet_hijri_calendar' => array(
+		'title' => 'Hijri Calendar Widget',
+		'description' => 'Display current Hijri date and calendar',
+		'settings' => array(
+			'show_gregorian' => true,
+			'show_events' => true,
+		),
+	),
+	'islamnet_featured_courses' => array(
+		'title' => 'Featured Courses',
+		'description' => 'Display featured Islamic courses',
+		'settings' => array(
+			'number_of_courses' => 3,
+			'show_price' => true,
+			'show_rating' => true,
+		),
+	),
+	'islamnet_community_stats' => array(
+		'title' => 'Community Statistics',
+		'description' => 'Display community statistics and metrics',
+		'settings' => array(
+			'show_members' => true,
+			'show_posts' => true,
+			'show_groups' => true,
+			'show_courses' => true,
+		),
+	),
+	'islamnet_recent_activities' => array(
+		'title' => 'Recent Activities',
+		'description' => 'Display recent community activities',
+		'settings' => array(
+			'number_of_activities' => 5,
+			'show_avatar' => true,
+			'show_date' => true,
+		),
+	),
+);
+
+return array(
+	'widgets' => $widget_settings,
+	'custom_widgets' => $custom_widgets,
+);

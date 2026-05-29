@@ -89,3 +89,132 @@ function islamnet_bp_message_bubble_classes( $classes ) {
     return $classes;
 }
 add_filter( 'bp_get_the_thread_message_css_class', 'islamnet_bp_message_bubble_classes' );
+
+/**
+ * Register BuddyPress member types for IslamNET
+ */
+add_action( 'bp_init', 'islamnet_bp_register_member_types' );
+function islamnet_bp_register_member_types() {
+if ( ! islamnet_is_buddypress_active() || ! function_exists( 'bp_register_member_type' ) ) {
+return;
+}
+
+bp_register_member_type( 'scholar', array(
+'labels' => array(
+'name'          => __( 'Scholars', 'islamnet' ),
+'singular_name' => __( 'Scholar', 'islamnet' ),
+),
+'has_directory' => true,
+'show_in_list'  => true,
+) );
+
+bp_register_member_type( 'student', array(
+'labels' => array(
+'name'          => __( 'Students', 'islamnet' ),
+'singular_name' => __( 'Student', 'islamnet' ),
+),
+'has_directory' => true,
+'show_in_list'  => true,
+) );
+
+bp_register_member_type( 'instructor', array(
+'labels' => array(
+'name'          => __( 'Instructors', 'islamnet' ),
+'singular_name' => __( 'Instructor', 'islamnet' ),
+),
+'has_directory' => true,
+'show_in_list'  => true,
+) );
+}
+
+/**
+ * Register BuddyPress group types for IslamNET
+ */
+add_action( 'bp_init', 'islamnet_bp_register_group_types' );
+function islamnet_bp_register_group_types() {
+if ( ! islamnet_is_buddypress_active() || ! function_exists( 'bp_groups_register_group_type' ) ) {
+return;
+}
+
+bp_groups_register_group_type( 'study-circle', array(
+'labels' => array(
+'name'          => __( 'Study Circles', 'islamnet' ),
+'singular_name' => __( 'Study Circle', 'islamnet' ),
+),
+'has_directory' => true,
+'show_in_create_screen' => true,
+) );
+
+bp_groups_register_group_type( 'discussion', array(
+'labels' => array(
+'name'          => __( 'Discussion Forums', 'islamnet' ),
+'singular_name' => __( 'Discussion Forum', 'islamnet' ),
+),
+'has_directory' => true,
+'show_in_create_screen' => true,
+) );
+
+bp_groups_register_group_type( 'charity', array(
+'labels' => array(
+'name'          => __( 'Charity Initiatives', 'islamnet' ),
+'singular_name' => __( 'Charity Initiative', 'islamnet' ),
+),
+'has_directory' => true,
+'show_in_create_screen' => true,
+) );
+}
+
+/**
+ * Register BuddyPress activity types for IslamNET
+ */
+add_action( 'bp_init', 'islamnet_bp_register_activity_types' );
+function islamnet_bp_register_activity_types() {
+if ( ! islamnet_is_buddypress_active() || ! function_exists( 'bp_activity_set_action' ) ) {
+return;
+}
+
+bp_activity_set_action( 'islamnet', 'prayer_reminder', __( 'shared a prayer reminder', 'islamnet' ) );
+bp_activity_set_action( 'islamnet', 'hijri_event', __( 'created a Hijri calendar event', 'islamnet' ) );
+bp_activity_set_action( 'islamnet', 'course_started', __( 'started an Islamic course', 'islamnet' ) );
+bp_activity_set_action( 'islamnet', 'charity_donation', __( 'made a charitable donation', 'islamnet' ) );
+}
+
+/**
+ * Add Islamic greeting to BuddyPress emails
+ */
+add_filter( 'bp_email_get_content_html', 'islamnet_bp_email_greeting' );
+function islamnet_bp_email_greeting( $content ) {
+$greeting = __( 'Assalamu Alaikum (Peace be upon you),', 'islamnet' ) . "\n\n";
+return $greeting . $content;
+}
+
+/**
+ * Add prayer time reminder functionality
+ */
+add_action( 'wp_footer', 'islamnet_bp_prayer_reminder_script' );
+function islamnet_bp_prayer_reminder_script() {
+if ( ! is_user_logged_in() || ! islamnet_is_buddypress_active() ) {
+return;
+}
+
+$user_id = get_current_user_id();
+$prayer_reminders_enabled = get_user_meta( $user_id, 'islamnet_prayer_reminders', true );
+
+if ( ! $prayer_reminders_enabled ) {
+return;
+}
+
+?>
+<script type="text/javascript">
+(function() {
+// Prayer time reminder functionality
+var prayerReminderEnabled = true;
+
+if (prayerReminderEnabled) {
+// Check prayer times and show reminders
+// This would be implemented with actual prayer time checking logic
+}
+})();
+</script>
+<?php
+}

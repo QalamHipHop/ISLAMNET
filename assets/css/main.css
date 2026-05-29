@@ -291,3 +291,463 @@ input:focus, textarea:focus {
 .site-title, .site-description {
     display: none; /* Hidden when logo or fallback text is present for cleaner UI */
 }
+
+/* ============================================
+   IslamNET Custom Islamic Features
+   ============================================ */
+
+/* Prayer Times Widget Styles */
+.prayer-times-widget {
+background: linear-gradient(135deg, #1a5490, #f39c12);
+color: white;
+padding: 1.5rem;
+border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+margin-bottom: 2rem;
+}
+
+.prayer-times-widget .widget-title {
+color: white;
+margin-bottom: 1rem;
+}
+
+.prayer-times-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+gap: 1rem;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.prayer-time-item {
+background: rgba(255, 255, 255, 0.15);
+padding: 1rem;
+border-radius: 8px;
+text-align: center;
+backdrop-filter: blur(10px);
+}
+
+.prayer-name {
+display: block;
+font-size: 0.85rem;
+opacity: 0.9;
+margin-bottom: 0.5rem;
+font-weight: 500;
+}
+
+.prayer-time {
+display: block;
+font-size: 1.3rem;
+font-weight: 700;
+}
+
+/* Hijri Calendar Widget */
+.hijri-calendar-widget {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-lg);
+padding: calc(var(--spacing-unit) * 3);
+border-left: 4px solid #27ae60;
+}
+
+.hijri-date-display {
+font-size: 1.5rem;
+font-weight: 700;
+color: #27ae60;
+margin-bottom: 1rem;
+}
+
+.gregorian-date-display {
+font-size: 0.9rem;
+color: var(--islamnet-gray-600);
+}
+
+/* Islamic Information Profile Section */
+.islamic-info-profile {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-lg);
+padding: calc(var(--spacing-unit) * 3);
+border: 1px solid var(--islamnet-gray-100);
+box-shadow: var(--shadow-soft);
+margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.islamic-info-profile h3 {
+color: #1a5490;
+margin-bottom: 1.5rem;
+font-size: 1.3rem;
+}
+
+.islamic-info-item {
+display: flex;
+justify-content: space-between;
+padding: calc(var(--spacing-unit) * 1.5) 0;
+border-bottom: 1px solid var(--islamnet-gray-100);
+}
+
+.islamic-info-item:last-child {
+border-bottom: none;
+}
+
+.islamic-info-item label {
+font-weight: 600;
+color: #1a5490;
+flex: 0 0 40%;
+}
+
+.islamic-info-item span {
+color: var(--islamnet-gray-700);
+flex: 0 0 60%;
+text-align: right;
+}
+
+/* BuddyPress Member Profile Enhancements */
+.bp-member-prayer-times,
+.bp-member-hijri-date {
+background: rgba(26, 84, 144, 0.05);
+border-left: 4px solid #1a5490;
+padding: calc(var(--spacing-unit) * 2);
+border-radius: var(--border-radius-md);
+margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.bp-member-prayer-label,
+.bp-member-hijri-label {
+font-weight: 600;
+color: #1a5490;
+margin-bottom: 0.5rem;
+font-size: 0.95rem;
+}
+
+.bp-member-prayer-list {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+gap: 0.5rem;
+margin: 0;
+padding: 0;
+}
+
+.bp-member-prayer-list li {
+background: white;
+padding: 0.5rem;
+border-radius: 6px;
+font-size: 0.85rem;
+text-align: center;
+border: 1px solid var(--islamnet-gray-200);
+}
+
+/* Featured Courses Widget */
+.islamnet-featured-courses {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: calc(var(--spacing-unit) * 2);
+margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.course-card {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-lg);
+overflow: hidden;
+box-shadow: var(--shadow-soft);
+transition: var(--transition-smooth);
+}
+
+.course-card:hover {
+box-shadow: var(--shadow-medium);
+transform: translateY(-4px);
+}
+
+.course-thumbnail {
+width: 100%;
+height: 150px;
+background: linear-gradient(135deg, #1a5490, #f39c12);
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 2rem;
+}
+
+.course-content {
+padding: calc(var(--spacing-unit) * 2);
+}
+
+.course-title {
+font-size: 1.1rem;
+font-weight: 600;
+color: #1a5490;
+margin-bottom: 0.5rem;
+}
+
+.course-meta {
+font-size: 0.85rem;
+color: var(--islamnet-gray-600);
+margin-bottom: 1rem;
+}
+
+.course-rating {
+color: #f39c12;
+margin-bottom: 1rem;
+}
+
+/* Community Statistics Widget */
+.islamnet-community-stats {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: calc(var(--spacing-unit) * 2);
+margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.stat-card {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-md);
+padding: calc(var(--spacing-unit) * 2);
+text-align: center;
+border: 1px solid var(--islamnet-gray-100);
+box-shadow: var(--shadow-soft);
+}
+
+.stat-number {
+font-size: 1.8rem;
+font-weight: 700;
+color: #1a5490;
+margin-bottom: 0.5rem;
+}
+
+.stat-label {
+font-size: 0.9rem;
+color: var(--islamnet-gray-600);
+font-weight: 500;
+}
+
+/* Recent Activities Widget */
+.islamnet-recent-activities {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-lg);
+padding: calc(var(--spacing-unit) * 3);
+box-shadow: var(--shadow-soft);
+}
+
+.activity-item {
+display: flex;
+gap: calc(var(--spacing-unit) * 2);
+padding: calc(var(--spacing-unit) * 2) 0;
+border-bottom: 1px solid var(--islamnet-gray-100);
+}
+
+.activity-item:last-child {
+border-bottom: none;
+}
+
+.activity-avatar {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: linear-gradient(135deg, #1a5490, #f39c12);
+flex-shrink: 0;
+}
+
+.activity-content {
+flex: 1;
+}
+
+.activity-user {
+font-weight: 600;
+color: #1a5490;
+margin-bottom: 0.25rem;
+}
+
+.activity-action {
+font-size: 0.9rem;
+color: var(--islamnet-gray-600);
+margin-bottom: 0.25rem;
+}
+
+.activity-time {
+font-size: 0.85rem;
+color: var(--islamnet-gray-500);
+}
+
+/* Event Cards */
+.event-card {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-lg);
+padding: calc(var(--spacing-unit) * 2);
+border-left: 4px solid #27ae60;
+margin-bottom: calc(var(--spacing-unit) * 2);
+box-shadow: var(--shadow-soft);
+}
+
+.event-date {
+font-size: 0.85rem;
+color: #27ae60;
+font-weight: 600;
+margin-bottom: 0.5rem;
+}
+
+.event-title {
+font-size: 1.1rem;
+font-weight: 600;
+color: #1a5490;
+margin-bottom: 0.5rem;
+}
+
+.event-description {
+font-size: 0.9rem;
+color: var(--islamnet-gray-700);
+line-height: 1.5;
+}
+
+/* Charity Campaign Cards */
+.charity-card {
+background: var(--islamnet-white);
+border-radius: var(--border-radius-lg);
+padding: calc(var(--spacing-unit) * 2);
+border: 1px solid var(--islamnet-gray-100);
+box-shadow: var(--shadow-soft);
+margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.charity-header {
+display: flex;
+justify-content: space-between;
+align-items: start;
+margin-bottom: 1rem;
+}
+
+.charity-title {
+font-size: 1.2rem;
+font-weight: 600;
+color: #1a5490;
+}
+
+.charity-goal {
+background: #27ae60;
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 6px;
+font-size: 0.85rem;
+font-weight: 600;
+}
+
+.charity-progress {
+background: var(--islamnet-gray-200);
+height: 8px;
+border-radius: 4px;
+overflow: hidden;
+margin-bottom: 1rem;
+}
+
+.charity-progress-bar {
+background: linear-gradient(90deg, #27ae60, #f39c12);
+height: 100%;
+transition: width 0.3s ease;
+}
+
+.charity-stats {
+display: flex;
+justify-content: space-between;
+font-size: 0.85rem;
+color: var(--islamnet-gray-600);
+margin-bottom: 1rem;
+}
+
+.charity-action {
+display: flex;
+gap: 1rem;
+}
+
+/* RTL Support for Islamic Context */
+html[dir="rtl"] .islamic-info-item {
+flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .islamic-info-item label {
+text-align: right;
+}
+
+html[dir="rtl"] .islamic-info-item span {
+text-align: left;
+}
+
+html[dir="rtl"] .activity-item {
+flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .bp-member-prayer-times,
+html[dir="rtl"] .bp-member-hijri-date {
+border-left: none;
+border-right: 4px solid #1a5490;
+}
+
+html[dir="rtl"] .event-card {
+border-left: none;
+border-right: 4px solid #27ae60;
+}
+
+html[dir="rtl"] .charity-card {
+direction: rtl;
+}
+
+/* Dark Mode Support for Islamic Features */
+@media (prefers-color-scheme: dark) {
+.islamic-info-profile,
+.bp-member-prayer-times,
+.bp-member-hijri-date,
+.course-card,
+.stat-card,
+.event-card,
+.charity-card,
+.islamnet-recent-activities {
+background: var(--islamnet-bg-secondary);
+border-color: var(--islamnet-gray-200);
+}
+
+.islamic-info-item,
+.activity-item,
+.event-card {
+border-color: var(--islamnet-gray-200);
+}
+
+.course-content,
+.activity-content {
+color: var(--islamnet-gray-700);
+}
+
+.bp-member-prayer-list li {
+background: var(--islamnet-bg-secondary);
+border-color: var(--islamnet-gray-200);
+}
+}
+
+/* Mobile Responsive for Islamic Features */
+@media (max-width: 768px) {
+.prayer-times-list {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.islamnet-featured-courses {
+grid-template-columns: 1fr;
+}
+
+.islamnet-community-stats {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.islamic-info-item {
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.islamic-info-item label,
+.islamic-info-item span {
+flex: none;
+text-align: left;
+}
+
+html[dir="rtl"] .islamic-info-item label,
+html[dir="rtl"] .islamic-info-item span {
+text-align: right;
+}
+}

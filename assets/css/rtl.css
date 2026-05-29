@@ -1,0 +1,484 @@
+/**
+ * IslamNET RTL (Right-to-Left) Stylesheet
+ * 
+ * This file provides RTL support for Arabic, Farsi, and other RTL languages
+ * @package IslamNET
+ */
+
+html {
+	direction: rtl;
+	text-align: right;
+}
+
+/* ============================================
+   Header & Navigation RTL
+   ============================================ */
+.site-branding {
+	flex-direction: row-reverse;
+}
+
+.main-navigation ul {
+	flex-direction: row-reverse;
+}
+
+.main-navigation {
+	flex-direction: row-reverse;
+}
+
+/* ============================================
+   Layout RTL
+   ============================================ */
+.container {
+	direction: rtl;
+}
+
+.primary {
+	margin-left: 0;
+	margin-right: 2rem;
+}
+
+.sidebar {
+	margin-right: 0;
+	margin-left: 2rem;
+}
+
+html[dir="rtl"] .container {
+	grid-template-columns: 300px 1fr;
+}
+
+html[dir="rtl"] .primary {
+	grid-column: 2;
+}
+
+html[dir="rtl"] .sidebar {
+	grid-column: 1;
+}
+
+/* ============================================
+   Forms RTL
+   ============================================ */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea,
+select {
+	text-align: right;
+	direction: rtl;
+}
+
+label {
+	text-align: right;
+}
+
+/* ============================================
+   Islamic Information RTL
+   ============================================ */
+.islamic-info-item {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.islamic-info-item label {
+	text-align: right;
+	margin-left: 1rem;
+	margin-right: 0;
+}
+
+.islamic-info-item span {
+	text-align: left;
+}
+
+/* ============================================
+   Prayer Times Widget RTL
+   ============================================ */
+.prayer-times-widget {
+	direction: rtl;
+	text-align: right;
+}
+
+.prayer-times-list {
+	flex-direction: row-reverse;
+}
+
+/* ============================================
+   BuddyPress Profile RTL
+   ============================================ */
+.bp-member-prayer-times,
+.bp-member-hijri-date {
+	border-left: none;
+	border-right: 4px solid #1a5490;
+	text-align: right;
+}
+
+.bp-member-prayer-label,
+.bp-member-hijri-label {
+	text-align: right;
+}
+
+.bp-member-prayer-list {
+	flex-direction: row-reverse;
+}
+
+/* ============================================
+   Activity Items RTL
+   ============================================ */
+.activity-item {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.activity-avatar {
+	margin-left: 0;
+	margin-right: 1rem;
+}
+
+.activity-content {
+	text-align: right;
+}
+
+/* ============================================
+   Event Cards RTL
+   ============================================ */
+.event-card {
+	border-left: none;
+	border-right: 4px solid #27ae60;
+	text-align: right;
+}
+
+/* ============================================
+   Charity Cards RTL
+   ============================================ */
+.charity-card {
+	direction: rtl;
+	text-align: right;
+}
+
+.charity-header {
+	flex-direction: row-reverse;
+}
+
+.charity-stats {
+	flex-direction: row-reverse;
+}
+
+.charity-action {
+	flex-direction: row-reverse;
+}
+
+/* ============================================
+   Widgets RTL
+   ============================================ */
+.widget {
+	border-left: none;
+	border-right: 4px solid #1a5490;
+	text-align: right;
+}
+
+.widget-title {
+	text-align: right;
+}
+
+.widget ul {
+	text-align: right;
+}
+
+.widget li {
+	text-align: right;
+}
+
+/* ============================================
+   Footer RTL
+   ============================================ */
+.footer-content {
+	direction: rtl;
+	text-align: right;
+}
+
+.footer-widget {
+	text-align: right;
+}
+
+.footer-bottom {
+	text-align: center;
+}
+
+/* ============================================
+   Buttons RTL
+   ============================================ */
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+	text-align: center;
+	direction: ltr;
+}
+
+/* ============================================
+   Mobile Navigation RTL
+   ============================================ */
+.mobile-bottom-nav {
+	direction: rtl;
+}
+
+.mobile-bottom-nav-item {
+	flex-direction: column;
+}
+
+/* ============================================
+   Course Cards RTL
+   ============================================ */
+.course-card {
+	text-align: right;
+	direction: rtl;
+}
+
+.course-title {
+	text-align: right;
+}
+
+.course-meta {
+	text-align: right;
+}
+
+/* ============================================
+   Statistics Cards RTL
+   ============================================ */
+.stat-card {
+	text-align: center;
+	direction: rtl;
+}
+
+.stat-number {
+	text-align: center;
+}
+
+.stat-label {
+	text-align: center;
+}
+
+/* ============================================
+   Flex Direction Fixes RTL
+   ============================================ */
+.header-inner {
+	flex-direction: row-reverse;
+}
+
+.site-header {
+	text-align: right;
+}
+
+.site-title {
+	text-align: right;
+}
+
+.site-description {
+	text-align: right;
+}
+
+/* ============================================
+   Padding & Margin Adjustments RTL
+   ============================================ */
+.entry {
+	text-align: right;
+	direction: rtl;
+}
+
+.entry-header {
+	text-align: right;
+}
+
+.entry-title {
+	text-align: right;
+}
+
+.entry-meta {
+	text-align: right;
+}
+
+.entry-content {
+	text-align: right;
+	direction: rtl;
+}
+
+.entry-content img {
+	margin-left: 1.5rem;
+	margin-right: 0;
+}
+
+/* ============================================
+   Lists RTL
+   ============================================ */
+ul, ol {
+	text-align: right;
+	direction: rtl;
+	margin-right: 2rem;
+	margin-left: 0;
+}
+
+li {
+	text-align: right;
+}
+
+/* ============================================
+   Blockquotes RTL
+   ============================================ */
+blockquote {
+	border-left: none;
+	border-right: 4px solid #1a5490;
+	padding-left: 0;
+	padding-right: 1.5rem;
+	text-align: right;
+	direction: rtl;
+}
+
+/* ============================================
+   Tables RTL
+   ============================================ */
+table {
+	direction: rtl;
+	text-align: right;
+}
+
+th, td {
+	text-align: right;
+	padding-right: 1rem;
+	padding-left: 0;
+}
+
+/* ============================================
+   Code Blocks RTL
+   ============================================ */
+code, pre {
+	direction: ltr;
+	text-align: left;
+	background: #f5f5f5;
+	padding: 1rem;
+	border-radius: 4px;
+	overflow-x: auto;
+}
+
+/* ============================================
+   Search Form RTL
+   ============================================ */
+.search-form {
+	flex-direction: row-reverse;
+}
+
+.search-form input {
+	text-align: right;
+	direction: rtl;
+}
+
+/* ============================================
+   Comments RTL
+   ============================================ */
+.comment {
+	text-align: right;
+	direction: rtl;
+}
+
+.comment-author {
+	text-align: right;
+}
+
+.comment-content {
+	text-align: right;
+	direction: rtl;
+}
+
+/* ============================================
+   Breadcrumbs RTL
+   ============================================ */
+.breadcrumb {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.breadcrumb li {
+	text-align: right;
+}
+
+/* ============================================
+   Pagination RTL
+   ============================================ */
+.pagination {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.pagination a,
+.pagination span {
+	margin-left: 0.5rem;
+	margin-right: 0;
+}
+
+/* ============================================
+   Icons RTL
+   ============================================ */
+.icon {
+	display: inline-block;
+}
+
+/* ============================================
+   Responsive RTL
+   ============================================ */
+@media (max-width: 768px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.primary {
+		grid-column: 1;
+		margin-right: 0;
+	}
+
+	.sidebar {
+		grid-column: 1;
+		margin-left: 0;
+	}
+
+	.main-navigation {
+		flex-direction: column-reverse;
+	}
+
+	.main-navigation ul {
+		flex-direction: column-reverse;
+	}
+
+	.prayer-times-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.islamic-info-item {
+		flex-direction: column;
+		text-align: right;
+	}
+
+	.islamic-info-item label,
+	.islamic-info-item span {
+		text-align: right;
+		margin: 0;
+	}
+}
+
+/* ============================================
+   Dark Mode RTL
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+	html {
+		direction: rtl;
+	}
+
+	body {
+		text-align: right;
+		direction: rtl;
+	}
+
+	.islamic-info-profile,
+	.event-card,
+	.charity-card {
+		text-align: right;
+		direction: rtl;
+	}
+}

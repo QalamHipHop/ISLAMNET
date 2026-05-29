@@ -2,13 +2,48 @@
 /**
  * IslamNET Demo Content - Customizer Settings
  * 
- * This file contains placeholder customizer settings for demo content.
+ * This file contains customizer settings for demo content.
  * Customizer options will be imported during theme setup.
  */
 
-// Placeholder for customizer settings
+// Customizer settings for IslamNET theme
 $customizer_settings = array(
-	// Customizer options will be configured here
+	'blogname' => 'IslamNET',
+	'blogdescription' => 'A Global Islamic Community Platform for Connection & Learning',
+	'site_icon' => 0,
+	'header_textcolor' => '000000',
+	'custom_logo' => 0,
+	'background_color' => 'ffffff',
+	'background_image' => 0,
+	'background_repeat' => 'repeat',
+	'background_position_x' => '0',
+	'background_position_y' => '0',
+	'background_size' => 'auto',
+	'background_attachment' => 'scroll',
+	'nav_menu_locations' => array(
+		'primary' => 0,
+		'footer' => 0,
+		'mobile' => 0,
+	),
+	// IslamNET specific customizer settings
+	'islamnet_primary_color' => '#1a5490',
+	'islamnet_secondary_color' => '#f39c12',
+	'islamnet_accent_color' => '#27ae60',
+	'islamnet_rtl' => true,
+	'islamnet_dark_mode' => false,
+	'islamnet_enable_prayer_times' => true,
+	'islamnet_prayer_times_city' => 'Tehran',
+	'islamnet_prayer_times_country' => 'Iran',
+	'islamnet_prayer_times_method' => '2',
+	'islamnet_enable_hijri_calendar' => true,
+	'islamnet_enable_notifications' => true,
+	'islamnet_enable_dark_mode_toggle' => true,
+	'islamnet_footer_text' => 'IslamNET © 2024. All rights reserved.',
+	'islamnet_social_facebook' => '',
+	'islamnet_social_twitter' => '',
+	'islamnet_social_instagram' => '',
+	'islamnet_social_youtube' => '',
+	'islamnet_social_telegram' => '',
 );
 
 return $customizer_settings;
